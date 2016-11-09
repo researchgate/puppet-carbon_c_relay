@@ -15,7 +15,7 @@ class carbon_c_relay::install (
     user { $user:
       ensure => present,
       groups => $group,
-      shell  => '/sbin/nologin'
+      shell  => '/usr/sbin/nologin'
     }
 
     package { $package_name:
